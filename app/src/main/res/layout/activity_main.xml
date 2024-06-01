@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Splash Screen Layout-->
+    <RelativeLayout
+        android:id="@+id/splashLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D1C4E9"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="280dp"
+            android:layout_marginEnd="97dp"
+            android:layout_marginBottom="395dp"
+            android:text="To Do List App"
+            android:textColor="#4A148C"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="362dp"
+            android:text="The FUTURE depends on what you do TODAY!"
+            android:textColor="#4A148C"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <!--Main Content Layout-->
+    <ScrollView
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp"
+        android:visibility="gone"
+        android:scrollbars="none">
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="176dp"
+        android:layout_height="67dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Add Task"
+        android:background="#4A148C"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+</RelativeLayout>

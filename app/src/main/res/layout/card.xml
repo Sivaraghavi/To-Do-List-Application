@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="#EDE7F6">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task Name"
+                android:textColor="#4A148C"
+                android:textSize="20sp"
+                android:layout_centerVertical="true">
+            </TextView>
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="Delete"
+                android:background="#D32F2F"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" >
+            </Button>
+                <Button
+                    android:id="@+id/complete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/delete"
+                    android:text="Complete"
+                    android:background="#388E3C"
+                    android:textColor="#FFFFFF"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+</RelativeLayout>
